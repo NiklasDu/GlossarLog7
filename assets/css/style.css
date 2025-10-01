@@ -15,34 +15,52 @@ h1 {
 }
 
 nav {
-    background-color: #3B82F6;
-    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(30, 58, 138, 0.9);
+    backdrop-filter: saturate(180%) blur(8px);
+    padding: 0.6rem 0.8rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
   
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1.25rem;
     margin: 0;
     padding: 0;
 }
 
 nav ul li a {
+    position: relative;
     color: #FFFFFF;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 16px;
-    transition: color 0.3s ease;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    padding: 0.25rem 0.2rem;
 }
 
-nav ul li a:hover {
-    color: #9fa8cb;
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #93C5FD;
+    transition: width 0.25s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
 }
 
 header {
-    padding: 1.5rem;
+    padding: 2rem 1.5rem 1rem 1.5rem;
     text-align: center;
 }
 
@@ -52,42 +70,50 @@ header h1 {
 }
 
 main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0.5rem 2rem;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 980px;
+    margin: 1.5rem auto 2.5rem auto;
+    padding: 1.25rem 2rem;
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 60%, #f9fafb 100%);
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(17,24,39,0.08);
 }
 
 main h2 {
     color: #1E3A8A;
-    border-bottom: 2px solid #3B82F6;
-    padding-bottom: 0.3rem;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.35rem;
+    margin-top: 0.5rem;
+}
+
+main a {
+    color: #1E3A8A;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 1rem 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
 }
 
 table th {
-    background: #1E3A8A;
+    background: linear-gradient(180deg, #1E3A8A, #1b3380);
     color: white;
-    padding: 0.5rem;
+    padding: 0.7rem 0.75rem;
     text-align: left;
 }
   
-  table td {
-    border: 1px solid #ddd;
-    padding: 0.5rem;
+table td {
+    border: 1px solid #e5e7eb;
+    padding: 0.65rem 0.75rem;
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background: #f3f4f6;
+    background: #f5f6f8;
     margin-top: 2rem;
     font-size: 0.9rem;
     color: #555;
@@ -95,9 +121,10 @@ footer {
 
 /* --- Suchfeld (index.html) --- */
 #search {
-    display: inline-block;
-    width: calc(100% - 140px);
+    display: block;
+    width: 100%;
     max-width: 100%;
+    box-sizing: border-box;
     padding: 0.8rem 1rem;
     border: 1px solid #e5e7eb;
     border-radius: 10px;
@@ -110,29 +137,6 @@ footer {
     outline: none;
     border-color: #3B82F6;
     box-shadow: 0 0 0 4px rgba(59,130,246,0.15);
-}
-
-#search-button {
-    display: inline-block;
-    margin-left: 0.5rem;
-    padding: 0.8rem 1.1rem;
-    border: none;
-    border-radius: 10px;
-    background: #1E3A8A;
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.06s ease;
-}
-
-#search-button:hover {
-    background: #3B82F6;
-}
-
-#search-button:active {
-    transform: translateY(1px);
 }
 
 /* --- grid layout für die Begriffe --- */
