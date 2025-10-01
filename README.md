@@ -24,7 +24,7 @@ Es wird kein Build-Tool benötigt. Einfach das Projekt klonen oder als ZIP laden
 - CSS3 (responsives, modernes Layout, Sticky-Navigation)
 - JavaScript (DOM-Manipulation für Suche und Footer-Datum)
 
-### Hinweise zur Umsetzung (Studierendenperspektive)
+### Hinweise zur Umsetzung
 - Der JavaScript-Code ist kommentiert, damit die Logik gut nachvollziehbar ist.
 - Das CSS setzt auf klare, wiederverwendbare Stile für Navigation, Hauptbereich und Tabellen.
 - Der Fokus liegt auf Einfachheit statt Feature-Tiefe, da es nur ein Prototyp darstellt.
