@@ -7,7 +7,43 @@
     <title>Startseite</title>
 </head>
 <body>
-    <h1>Glossar</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="logistik.html">Logistik</a></li>
+            <li><a href="it.html">IT</a></li>
+            <li><a href="marketing.html">Marketing</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="assets/img/logo.png" width="150" height="100" alt="Logo">
+        <h1>Glossar der Log7-Consult GmbH</h1>
+        <p>Dieses Glossar enthält die wichtigsten Begriffe der Log7-Consult GmbH aus den Bereichen Logistik, IT und Marketing.</p>
+    </header>
+
+    
+
+    <main>
+        <h2>Begriffe durchsuchen</h2>
+        <input type="text" id="search" placeholder="Begriff suchen">
+        <button id="search-button">Suchen</button>
+        <ul id="termList">
+            <a href="scm.html"><li>Supply Chain Management</li></a>
+            <a href="jit.html"><li>Just-in-Time</li></a>
+            <a href="erp.html"><li>ERP-System</li></a>
+            <a href="api.html"><li>API / Schnittstelle</li></a>
+            <a href="seo.html"><li>SEO</li></a>
+          </ul>
+    </main>
+
+
+    <footer>
+        <p>© 2025 Log7-Consult GmbH | Letzte Aktualisierung:
+            <span id="last-updated">01.10.2025</span>
+        </p>
+    </footer>
+
     <script src="assets/js/script.js"></script>    
 </body>
 </html>
