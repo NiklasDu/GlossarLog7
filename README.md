@@ -29,6 +29,15 @@ Es wird kein Build-Tool benötigt. Einfach das Projekt klonen oder als ZIP laden
 - Das CSS setzt auf klare, wiederverwendbare Stile für Navigation, Hauptbereich und Tabellen.
 - Der Fokus liegt auf Einfachheit statt Feature-Tiefe, da es nur ein Prototyp darstellt.
 
-### Lizenz / Autor
-Erstellt im Rahmen einer Hochschul-Fallstudie. Nutzung für Lernzwecke ist erwünscht.
+### Autor
+Erstellt im Rahmen einer Hochschul-Fallstudie. 
+ 
+ ### Screenshots
+ ![Startseite](assets/img/Startseite.png)
+ 
+ ![Mobile Ansicht](assets/img/MobileView.png)
+ 
+ ![Suchfunktion](assets/img/Suchfunktion.png)
+ 
+ ![JIT Showcase](assets/img/JITShowcase.png)
 
